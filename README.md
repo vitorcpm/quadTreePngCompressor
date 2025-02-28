@@ -33,13 +33,13 @@ To decompress a .txt file back into a PNG image, run the program with the follow
 ### Example
 Here is an example of compressing and decompressing an image:
 
-![bart](bart.png)
+![bart](images/bart.png)
 
-Image above compressed to a .txt file: [Here](./bartCompressed.txt)
+Image above compressed to a .txt file: [Here](./images/bartCompressed.txt)
 
 Decompressed .txt file:
 
-![bart](bartDecompressed.png)
+![bart](images/bartDecompressed.png)
 
 ### Limitations
 - Only PNG images are accepted. 
