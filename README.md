@@ -21,8 +21,17 @@ Make sure to include `lodepng.cpp` and `lodepng.h` in your project.
 
 ## Usage
 
+### Compiling
+To compile this project use the following command in a terminal:
+```bash
+g++ -o quadtree main.cpp QuadTree.cpp PNGImage.cpp lodepng.cpp -std=c++11 -O3 -Wall
+```
+
 ### Compress an Image
 To compress a PNG image into a `.txt` file, run the program with the following command:
+```bash
+./quadtree compress input.png compressed.txt
+```
 
 ### Decompress an Image
 To decompress a .txt file back into a PNG image, run the program with the following command:
@@ -41,19 +50,19 @@ Decompressed .txt file:
 
 ![bart](images/bartDecompressed.png)
 
-### Limitations
+## Limitations
 - Only PNG images are accepted. 
 
 - Quadratic Resolution Only: The program only works with images that have quadratic resolution (e.g., 100x100, 500x500, 1000x1000). Non-quadratic images will not be processed correctly.
 
 - Lossy Compression: The compression is lossy, meaning some image quality may be lost depending on the tolerance level used.
 
-### How It Works
+## How It Works
 The QuadTree algorithm divides the image into four quadrants recursively. If a quadrant is uniform (or nearly uniform, based on a tolerance threshold), it is stored as a single color. Otherwise, the quadrant is further divided. This process continues until the entire image is compressed.
 
 
-### Customization
+## Customization
 You can adjust the compression tolerance to control the balance between compression ratio and image quality. A higher tolerance will result in better compression but may reduce image quality.
 
-### Contributing
+## Contributing
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
