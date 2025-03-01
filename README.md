@@ -60,9 +60,5 @@ Here is an example of compressing and decompressing an image:
 ## How It Works
 The QuadTree algorithm divides the image into four quadrants recursively. If a quadrant is uniform (or nearly uniform, based on a tolerance threshold), it is stored as a single color. Otherwise, the quadrant is further divided. This process continues until the entire image is compressed.
 
-
-## Customization
-You can adjust the compression tolerance to control the balance between compression ratio and image quality. A higher tolerance will result in better compression but may reduce image quality.
-
 ## Contributing
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
