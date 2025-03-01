@@ -8,7 +8,7 @@ This project implements a QuadTree-based image compression and decompression alg
 - Supports quadratic resolution images (e.g., 100x100, 500x500, 1000x1000, etc.).
 - Customizable compression tolerance to balance between compression ratio and image quality.
 
-## Requirements
+## Requirements and  Dependencies
 - C++ compiler (e.g., g++, clang, or MSVC).
 - **lodepng** library for PNG image handling.
 - [lodepng GitHub Repository](https://github.com/lvandeve/lodepng)
