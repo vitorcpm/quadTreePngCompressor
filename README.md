@@ -10,7 +10,7 @@ This project implements a QuadTree-based image compression and decompression alg
 
 ## Requirements
 - C++ compiler (e.g., g++, clang, or MSVC).
-- `lodepng` library for PNG image handling.
+- **lodepng** library for PNG image handling.
 - [lodepng GitHub Repository](https://github.com/lvandeve/lodepng)
 - Make sure to include `lodepng.cpp` and `lodepng.h` in your project.
 
